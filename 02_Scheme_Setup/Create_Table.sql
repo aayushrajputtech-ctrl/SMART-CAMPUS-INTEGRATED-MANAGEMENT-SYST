@@ -49,14 +49,5 @@ Payment_Status VARCHAR(20),
 FOREIGN KEY (Student_ID) REFERENCES Student(Student_ID)
 );
 
---CREATE LIBRARY TABLE
-CREATE TABLE Library(
-Book_ID INT PRIMARY KEY,
-Book_Name VARCHAR(50),
-Author VARCHAR(50),
-Student_ID INT,
-Issue_Date DATE,
-Return_Date DATE,
-FOREIGN KEY (Student_ID) REFERENCES Student(Student_ID)
-);
+
 
