@@ -1,0 +1,8 @@
+Most educational institutions manage student records, attendance,
+faculty information, library data, and fee details using manual methods
+or separate systems. This leads to data redundancy, inconsistency, and
+difficulty in accessing information.
+The Smart Campus Integrated Management System aims to develop a
+centralized database system using DBMS to integrate all campus
+activities into a single platform. The system ensures efficient data
+management, reduces paperwork, and improves administrative decisionmaking.

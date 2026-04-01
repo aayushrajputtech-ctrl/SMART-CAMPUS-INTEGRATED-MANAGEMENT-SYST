@@ -1,0 +1,7 @@
+ To centralize all campus-related data in a single database
+ To automate student registration and course enrollment
+ To digitally manage attendance records
+ To maintain library book issue and return records
+ To manage fee payment details
+ To ensure data integrity using primary and foreign keys
+ To generate reports using SQL queries

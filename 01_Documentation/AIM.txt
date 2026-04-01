@@ -1,0 +1,1 @@
+To design and implement a Smart Campus Integrated Management System using MySQL for efficient management of student, faculty, course, and campus resources.
