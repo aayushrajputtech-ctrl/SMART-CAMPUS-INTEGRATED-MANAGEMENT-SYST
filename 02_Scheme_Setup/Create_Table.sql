@@ -1,0 +1,62 @@
+--CREATE STUDENT TABLE
+CREATE TABLE Student(
+Student_ID INT PRIMARY KEY,
+Name VARCHAR(50) NOT NULL,
+Department VARCHAR(50),
+Phone VARCHAR(15),
+Email VARCHAR(50)
+);
+
+--CREATE COURSE TABLE
+CREATE TABLE Course(
+Course_ID INT PRIMARY KEY,
+Course_Name VARCHAR(50),
+Department VARCHAR(50)
+);
+
+--CREATE ENROLLMENT TABLE
+CREATE TABLE Enrollment(
+Enrollment_ID INT PRIMARY KEY,
+Student_ID INT,
+Course_ID INT,
+FOREIGN KEY (Student_ID) REFERENCES Student(Student_ID),
+FOREIGN KEY (Course_ID) REFERENCES Course(Course_ID)
+);
+
+--CREATE ATTENDANC TABLE 
+CREATE TABLE Attendance(
+Attendance_ID INT PRIMARY KEY,
+Student_ID INT,
+Date DATE,
+Status VARCHAR(10),
+FOREIGN KEY (Student_ID) REFERENCES Student(Student_ID)
+);
+
+--CREATE FACULTY TABLE
+CREATE TABLE Faculty(
+Faculty_ID INT PRIMARY KEY,
+Name VARCHAR(50),
+Department VARCHAR(50),
+Subject VARCHAR(50)
+);
+
+--CREATE FEES TABLE
+CREATE TABLE Fees(
+Fee_ID INT PRIMARY KEY,
+Student_ID INT,
+Amount DECIMAL(10,2),
+Payment_Status VARCHAR(20),
+FOREIGN KEY (Student_ID) REFERENCES Student(Student_ID)
+);
+
+--CREATE LIBRARY TABLE
+CREATE TABLE Library(
+Book_ID INT PRIMARY KEY,
+Book_Name VARCHAR(50),
+Author VARCHAR(50),
+Student_ID INT,
+Issue_Date DATE,
+Return_Date DATE,
+FOREIGN KEY (Student_ID) REFERENCES Student(Student_ID)
+);
+
