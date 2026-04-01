@@ -59,4 +59,3 @@ Issue_Date DATE,
 Return_Date DATE,
 FOREIGN KEY (Student_ID) REFERENCES Student(Student_ID)
 );
-
